@@ -1,0 +1,4 @@
+dinov2_vitl14_pretrain.pth
+cityscapes
+.vscode
+*.pyc
