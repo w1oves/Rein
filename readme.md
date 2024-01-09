@@ -42,12 +42,10 @@ After downloading, your directory structure should look like this:
 ## Citation
 If you find this code or data useful, please cite our paper
 ```
-@misc{wei2023stronger,
-      title={Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation}, 
-      author={Zhixiang Wei and Lin Chen and Yi Jin and Xiaoxiao Ma and Tianle Liu and Pengyang Lin and Ben Wang and Huaian Chen and Jinjin Zheng},
-      year={2023},
-      eprint={2312.04265},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{wei2023stronger,
+  title={Stronger, Fewer, \& Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation},
+  author={Wei, Zhixiang and Chen, Lin and Jin, Yi and Ma, Xiaoxiao and Liu, Tianle and Lin, Pengyang and Wang, Ben and Chen, Huaian and Zheng, Jinjin},
+  journal={arXiv preprint arXiv:2312.04265},
+  year={2023}
 }
 ```
