@@ -109,7 +109,7 @@ If you find our code or data helpful, please cite our paper:
 ```bibtex
 @article{wei2023stronger,
   title={Stronger, Fewer, \& Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation},
-  author={Wei, Zhixiang and Chen, Lin and Jin, Yi and Ma, Xiaoxiao and Liu, Tianle and Ling, Pengyang and Wang, Ben and Chen, Huaian and Zheng, Jinjin},
+  author={Wei, Zhixiang and Chen, Lin and Jin, Yi and Ma, Xiaoxiao and Liu, Tianle and Lin, Pengyang and Wang, Ben and Chen, Huaian and Zheng, Jinjin},
   journal={arXiv preprint arXiv:2312.04265},
   year={2023}
 }
