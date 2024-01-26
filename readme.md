@@ -1,7 +1,7 @@
 # Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation
 
 ## Abstract
-This project serves as the official implementation update for the [paper](https://arxiv.org/pdf/2312.04265.pdf). It presents a robust fine-tuning method called **Rein**, specifically developed to effectively utilize **Vision Foundation Models (VFMs)** for **Domain Generalized Semantic Segmentation (DGSS)**.
+This project serves as the updated official implementation for the [paper](https://arxiv.org/pdf/2312.04265.pdf). It presents a robust fine-tuning method called **Rein**, specifically developed to effectively utilize **Vision Foundation Models (VFMs)** for **Domain Generalized Semantic Segmentation (DGSS)**.
 
 ![Rein Framework](framework.png)
 
