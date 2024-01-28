@@ -6,7 +6,7 @@ This project serves as the updated official implementation for the [paper](https
 ![Rein Framework](framework.png)
 
 ## News!
-* Using only simulated data (UrbanSyn, GTAV, and Synthia), Rein achieved an mIoU of **78.4 on Cityscapes**! We also attained an **average mIoU of 71.7** across Cityscapes, BDD100K, and Mapillary!
+* Using only simulated data (UrbanSyn, GTAV, and Synthia), Rein achieved an mIoU of **78.4 on Cityscapes**! We also attained an **average mIoU of 71.7** across Cityscapes, BDD100K, and Mapillary! Weight is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/UrbanSyn%2BGTAV%2BSynthia).
 
 ## Try and Test
 **Experience the demo:** Users can open [demo.ipynb](demo.ipynb) in any Jupyter-supported editor to explore our demonstration.
