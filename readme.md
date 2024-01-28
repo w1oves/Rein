@@ -1,5 +1,6 @@
 # Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-adaptation-on-cityscapes-to-acdc)](https://paperswithcode.com/sota/domain-adaptation-on-cityscapes-to-acdc?p=stronger-fewer-superior-harnessing-vision)
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-adaptation-on-gtav-to-cityscapes-1)](https://paperswithcode.com/sota/domain-adaptation-on-gtav-to-cityscapes-1?p=stronger-fewer-superior-harnessing-vision)
 ## Abstract
 This project serves as the updated official implementation for the [paper](https://arxiv.org/pdf/2312.04265.pdf). It presents a robust fine-tuning method called **Rein**, specifically developed to effectively utilize **Vision Foundation Models (VFMs)** for **Domain Generalized Semantic Segmentation (DGSS)**.
