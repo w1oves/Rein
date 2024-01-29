@@ -92,14 +92,23 @@ Rein
 ```
 
 ## Evaluation
-Generate full weights for testing:
-```
-python tools/generate_full_weights.py --dinov2_segmentor_path checkpoints/dinov2_segmentor.pth --backbone checkpoints/dinov2_vitl14_pretrain.pth --rein_head checkpoints/dinov2_rein_and_head.pth
-```
-Then, run the evaluation:
-```
-python tools/test.py checkpoints/dinov2_segmentor.pth checkpoints/dinov2_segmentor.pth
-```
+* Generate full weights for testing in 512x512:
+  ```
+  python tools/generate_full_weights.py --dinov2_segmentor_path checkpoints/dinov2_segmentor.pth --backbone checkpoints/dinov2_vitl14_pretrain.pth --rein_head checkpoints/dinov2_rein_and_head.pth
+  ```
+  Then, run the evaluation:
+  ```
+  python tools/test.py configs/dinov2/rein_dinov2_mask2former_512x512_bs1x4.py checkpoints/dinov2_segmentor.pth
+  ```
+
+* Generate full weights for testing in 1024x1024:
+  ```
+  python tools/generate_full_weights_1024x1024.py --dinov2_segmentor_path checkpoints/dinov2_segmentor.pth --backbone checkpoints/dinov2_vitl14_pretrain.pth --rein_head /path/to/checkpoint
+  ```
+  Then, run the evaluation:
+  ```
+  python tools/test.py configs/dinov2/rein_dinov2_mask2former_1024x1024_bs4x2.py checkpoints/dinov2_segmentor.pth
+  ```
 
 ## Training
 Generate converted DINOv2 weights:
