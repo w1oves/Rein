@@ -15,12 +15,19 @@ snow_acdc_train_pipeline = [
     dict(type="PhotoMetricDistortion"),
     dict(type="PackSegInputs"),
 ]
-snow_acdc_test_pipeline = [
+snow_acdc_val_pipeline = [
     dict(type="LoadImageFromFile"),
     dict(type="Resize", scale=(1920, 1080), keep_ratio=True),
     # add loading annotation after ``Resize`` because ground truth
     # does not need to do resize data transform
     dict(type="LoadAnnotations"),
+    dict(type="PackSegInputs"),
+]
+snow_acdc_test_pipeline = [
+    dict(type="LoadImageFromFile"),
+    dict(type="Resize", scale=(1920, 1080), keep_ratio=True),
+    # add loading annotation after ``Resize`` because ground truth
+    # does not need to do resize data transform
     dict(type="PackSegInputs"),
 ]
 train_snow_acdc = dict(
@@ -40,6 +47,17 @@ val_snow_acdc = dict(
     data_prefix=dict(
         img_path="rgb_anon/snow/val",
         seg_map_path="gt/snow/val",
+    ),
+    img_suffix="_rgb_anon.png",
+    seg_map_suffix="_gt_labelTrainIds.png",
+    pipeline=snow_acdc_val_pipeline,
+)
+test_snow_acdc = dict(
+    type=snow_acdc_type,
+    data_root=snow_acdc_root,
+    data_prefix=dict(
+        img_path="rgb_anon/snow/test",
+        seg_map_path="gt/snow/test",
     ),
     img_suffix="_rgb_anon.png",
     seg_map_suffix="_gt_labelTrainIds.png",
