@@ -340,10 +340,10 @@ class DinoVisionTransformer(BaseModule):
                 ret[0], scale_factor=4, mode="bilinear", align_corners=False
             )
             ret[1] = F.interpolate(
-                ret[0], scale_factor=2, mode="bilinear", align_corners=False
+                ret[1], scale_factor=2, mode="bilinear", align_corners=False
             )
             ret[3] = F.interpolate(
-                ret[0], scale_factor=0.5, mode="bilinear", align_corners=False
+                ret[3], scale_factor=0.5, mode="bilinear", align_corners=False
             )
         else:
             ret[0][0] = F.interpolate(
