@@ -15,12 +15,19 @@ rain_acdc_train_pipeline = [
     dict(type="PhotoMetricDistortion"),
     dict(type="PackSegInputs"),
 ]
-rain_acdc_test_pipeline = [
+rain_acdc_val_pipeline = [
     dict(type="LoadImageFromFile"),
     dict(type="Resize", scale=(1920, 1080), keep_ratio=True),
     # add loading annotation after ``Resize`` because ground truth
     # does not need to do resize data transform
     dict(type="LoadAnnotations"),
+    dict(type="PackSegInputs"),
+]
+rain_acdc_test_pipeline = [
+    dict(type="LoadImageFromFile"),
+    dict(type="Resize", scale=(1920, 1080), keep_ratio=True),
+    # add loading annotation after ``Resize`` because ground truth
+    # does not need to do resize data transform
     dict(type="PackSegInputs"),
 ]
 train_rain_acdc = dict(
@@ -43,5 +50,17 @@ val_rain_acdc = dict(
     ),
     img_suffix="_rgb_anon.png",
     seg_map_suffix="_gt_labelTrainIds.png",
+    pipeline=rain_acdc_val_pipeline,
+)
+test_rain_acdc = dict(
+    type=rain_acdc_type,
+    data_root=rain_acdc_root,
+    data_prefix=dict(
+        img_path="rgb_anon/rain/test",
+        seg_map_path="gt/rain/test",
+    ),
+    img_suffix="_rgb_anon.png",
+    seg_map_suffix="_gt_labelTrainIds.png",
     pipeline=rain_acdc_test_pipeline,
 )
+
