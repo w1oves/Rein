@@ -1,3 +1,3 @@
-from .peft_encoder_decoder import PEFTEncoderDecoder
+from .frozen_encoder_decoder import FrozenBackboneEncoderDecoder
 
-__all__ = ["PEFTEncoderDecoder"]
+__all__ = ["FrozenBackboneEncoderDecoder"]
