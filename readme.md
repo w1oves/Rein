@@ -118,9 +118,13 @@ Generate converted DINOv2 weights:
 ```
 python tools/convert_models/convert_dinov2_large_512x512.py checkpoints/dinov2_vitl14_pretrain.pth
 ```
-Start training:
+Start training in single GPU:
 ```
 python tools/train.py configs/dinov2/rein_dinov2_mask2former_512x512_bs1x4.py
+```
+Start training in multiple GPU:
+```
+PORT=12345 CUDA_VISIBLE_DEVICES=1,2,3,4 bash tools/dist_train.sh configs/dinov2/rein_dinov2_mask2former_1024x1024_bs4x2.py NUM_GPUS
 ```
 
 ## Citation
