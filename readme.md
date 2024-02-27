@@ -10,6 +10,8 @@ This project serves as the updated official implementation for the [paper](https
 ![Rein Framework](framework.png)
 
 ## 🔥 News!
+🔥 Rein is accepted in CVPR 2024!
+
 🔥 Using only the data from the Cityscapes training set, we achieved an average mIoU of **77.56% on the ACDC** test set! This result ranks **first** in the DGSS methods on the ACDC [benchmark](https://acdc.vision.ee.ethz.ch/submissions/65b6848187f1a5171cf44c34)! Weight is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/Cityscapes).
 
 🔥 Using only synthetic data (UrbanSyn, GTAV, and Synthia), Rein achieved an mIoU of **78.4\% on Cityscapes**! We also attained an **average mIoU of 71.7** across Cityscapes, BDD100K, and Mapillary! Weight is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/UrbanSyn%2BGTAV%2BSynthia).
