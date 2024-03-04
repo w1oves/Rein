@@ -32,7 +32,7 @@ This project serves as the updated official implementation for the [paper](https
 
 ## Performance For Various Backbones (Trained on GTAV).
 
-|Setting |Pretraining|Cityscapes |Config|Log & Checkpoint|
+|Setting |Pretraining|Citys. mIoU |Config|Log & Checkpoint|
 |-|-|-|-|-|
 |ResNet50 |ImageNet1k|49.1|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/20240119_155612.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/iter_40000_published.pth)
 |ResNet101 |ImageNet1k|45.9|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/config.py)| [log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/20240124_160509.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/iter_40000_published.pth)
