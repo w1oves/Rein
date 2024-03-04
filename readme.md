@@ -1,11 +1,12 @@
 # [CVPR 2024] Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-adaptation-on-cityscapes-to-acdc)](https://paperswithcode.com/sota/domain-adaptation-on-cityscapes-to-acdc?p=stronger-fewer-superior-harnessing-vision)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-generalization-on-gta-to-avg)](https://paperswithcode.com/sota/domain-generalization-on-gta-to-avg?p=stronger-fewer-superior-harnessing-vision)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-generalization-on-gta5-to-cityscapes)](https://paperswithcode.com/sota/domain-generalization-on-gta5-to-cityscapes?p=stronger-fewer-superior-harnessing-vision)
 ## Abstract
-This project serves as the updated official implementation for the [paper](https://arxiv.org/pdf/2312.04265.pdf). It presents a robust fine-tuning method called **Rein**, specifically developed to effectively utilize **Vision Foundation Models (VFMs)** for **Domain Generalized Semantic Segmentation (DGSS)**. It achieves **SOTA on Cityscapes to ACDC, and GTAV to Cityscapes+Mapillary+BDD100K**.  Using only synthetic data, Rein achieved an mIoU of **78.4\% on Cityscapes** validation set!
+This project serves as the updated official implementation for the [paper](https://arxiv.org/pdf/2312.04265.pdf). It presents a robust fine-tuning method called **Rein**, specifically developed to effectively utilize **Vision Foundation Models (VFMs)** for **Domain Generalized Semantic Segmentation (DGSS)**. It achieves **SOTA on Cityscapes to ACDC, and GTAV to Cityscapes+Mapillary+BDD100K**.  Using only synthetic data, Rein achieved an mIoU of **78.4\% on Cityscapes** validation set! Using only the data from the Cityscapes training set, we achieved an average mIoU of **77.56% on ACDC** test set!
 
 ![Rein Framework](framework.png)
 
@@ -13,9 +14,31 @@ This project serves as the updated official implementation for the [paper](https
 
 🔥 Rein is accepted in CVPR 2024!
 
-🔥 Using only the data from the Cityscapes training set, we achieved an average mIoU of **77.56% on the ACDC** test set! This result ranks **first** in the DGSS methods on the ACDC [benchmark](https://acdc.vision.ee.ethz.ch/submissions/65b6848187f1a5171cf44c34)! Weight is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/Cityscapes).
+🔥 Using only the data from the Cityscapes training set, we achieved an average mIoU of **77.56% on the ACDC** test set! This result ranks **first** in the DGSS methods on the ACDC [benchmark](https://acdc.vision.ee.ethz.ch/submissions/65b6848187f1a5171cf44c34)! Checkpoint is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/Cityscapes).
 
-🔥 Using only synthetic data (UrbanSyn, GTAV, and Synthia), Rein achieved an mIoU of **78.4\% on Cityscapes**! We also attained an **average mIoU of 71.7** across Cityscapes, BDD100K, and Mapillary! Weight is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/UrbanSyn%2BGTAV%2BSynthia).
+🔥 Using only synthetic data (UrbanSyn, GTAV, and Synthia), Rein achieved an mIoU of **78.4\% on Cityscapes**! Checkpoint is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/UrbanSyn%2BGTAV%2BSynthia).
+
+## Performance Under Various Settings (DINOv2).
+
+|Setting |mIoU |Config|Log & Checkpoint|
+|-|-|-|-|
+|GTAV $\rightarrow$ Cityscapes|66.7|[config](https://github.com/w1oves/Rein/releases/download/GTAV/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV/20231213_213507.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV/iter_40000_published.pth)
+|+Synthia $\rightarrow$ Cityscapes|68.1|-|-|
+|+Synthia+UrbanSyn $\rightarrow$ Cityscapes|78.4|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)|
+|+1/16 of Cityscapes training $\rightarrow$ Cityscapes|82.5|-|-
+|GTAV $\rightarrow$ BDD100K|60.0|[config](https://github.com/w1oves/Rein/releases/download/GTAV/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV/20231213_213507.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV/iter_40000_published.pth)
+|Cityscapes $\rightarrow$ ACDC|77.6|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)
+|Cityscapes $\rightarrow$ Cityscapes-C|60.0|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)
+
+## Performance For Various Backbones (Trained on GTAV).
+
+|Setting |Pretraining|Cityscapes|BDD100K|Mapillary|Average |Config|Log & Checkpoint|
+|-|-|-|-|-|-|-|-|
+|ResNet50 |ImageNet1k|49.1|41.2|49.3|46.6|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/20240119_155612.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/iter_40000_published.pth)
+|ResNet101 |ImageNet1k|45.9|41.6|51.4|46.3|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/config.py)| [log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/20240124_160509.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/iter_40000_published.pth)
+|ConvNeXt-Large |ImageNet21k| 57.9| 50.3| 58.5| 55.5|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/20240125_162647.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/iter_40000_published.pth)
+|ViT-Small |DINOv2|55.3|53.2|58.7|55.7|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/20240129_201817.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/iter_40000_published.pth)
+|ViT-Base |DINOv2|64.3|57.3|64.8|62.1|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/20240129_201643.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/iter_40000_published.pth)
 
 ## Try and Test
 **Experience the demo:** Users can open [demo.ipynb](demo.ipynb) in any Jupyter-supported editor to explore our demonstration.
