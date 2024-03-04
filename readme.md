@@ -32,13 +32,13 @@ This project serves as the updated official implementation for the [paper](https
 
 ## Performance For Various Backbones (Trained on GTAV).
 
-|Setting |Pretraining|Cityscapes|BDD100K|Mapillary|Average |Config|Log & Checkpoint|
-|-|-|-|-|-|-|-|-|
-|ResNet50 |ImageNet1k|49.1|41.2|49.3|46.6|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/20240119_155612.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/iter_40000_published.pth)
-|ResNet101 |ImageNet1k|45.9|41.6|51.4|46.3|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/config.py)| [log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/20240124_160509.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/iter_40000_published.pth)
-|ConvNeXt-Large |ImageNet21k| 57.9| 50.3| 58.5| 55.5|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/20240125_162647.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/iter_40000_published.pth)
-|ViT-Small |DINOv2|55.3|53.2|58.7|55.7|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/20240129_201817.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/iter_40000_published.pth)
-|ViT-Base |DINOv2|64.3|57.3|64.8|62.1|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/20240129_201643.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/iter_40000_published.pth)
+|Setting |Pretraining|Cityscapes |Config|Log & Checkpoint|
+|-|-|-|-|-|
+|ResNet50 |ImageNet1k|49.1|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/20240119_155612.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet50/iter_40000_published.pth)
+|ResNet101 |ImageNet1k|45.9|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/config.py)| [log](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/20240124_160509.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BResNet101/iter_40000_published.pth)
+|ConvNeXt-Large |ImageNet21k| 57.9|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/20240125_162647.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BConvNeXt-L/iter_40000_published.pth)
+|ViT-Small |DINOv2|55.3|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/20240129_201817.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Small/iter_40000_published.pth)
+|ViT-Base |DINOv2|64.3|[config](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/20240129_201643.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV%2BViT-Base/iter_40000_published.pth)
 
 ## Try and Test
 **Experience the demo:** Users can open [demo.ipynb](demo.ipynb) in any Jupyter-supported editor to explore our demonstration.
