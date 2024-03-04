@@ -22,12 +22,12 @@ This project serves as the updated official implementation for the [paper](https
 
 |Setting |mIoU |Config|Log & Checkpoint|
 |-|-|-|-|
-|GTAV $\rightarrow$ Cityscapes|66.7|[config](https://github.com/w1oves/Rein/releases/download/GTAV/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV/20231213_213507.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV/iter_40000_published.pth)
+|**GTAV $\rightarrow$ Cityscapes**|**66.7**|[config](https://github.com/w1oves/Rein/releases/download/GTAV/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV/20231213_213507.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV/iter_40000_published.pth)
 |+Synthia $\rightarrow$ Cityscapes|68.1|-|-|
-|+Synthia+UrbanSyn $\rightarrow$ Cityscapes|78.4|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)|
+|**+UrbanSyn $\rightarrow$ Cityscapes**|**78.4**|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)|
 |+1/16 of Cityscapes training $\rightarrow$ Cityscapes|82.5|-|-
 |GTAV $\rightarrow$ BDD100K|60.0|[config](https://github.com/w1oves/Rein/releases/download/GTAV/config.py)|[log](https://github.com/w1oves/Rein/releases/download/GTAV/20231213_213507.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/GTAV/iter_40000_published.pth)
-|Cityscapes $\rightarrow$ ACDC|77.6|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)
+|**Cityscapes $\rightarrow$ ACDC**|**77.6**|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)
 |Cityscapes $\rightarrow$ Cityscapes-C|60.0|[config](https://github.com/w1oves/Rein/releases/download/Cityscapes/config.py)|[log](https://github.com/w1oves/Rein/releases/download/Cityscapes/20240120_154745.json) & [checkpoint](https://github.com/w1oves/Rein/releases/download/Cityscapes/citys2acdc_40k_rein_head.pth)
 
 ## Performance For Various Backbones (Trained on GTAV).
