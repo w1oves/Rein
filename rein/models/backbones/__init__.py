@@ -11,6 +11,5 @@ __all__ = [
     "ReinsDinoVisionTransformer",
     "ReinsEVA2",
     "ReinsResNetV1c",
-    "ReinsVisionTransformer",
     "ReinsConvNeXt",
 ]
