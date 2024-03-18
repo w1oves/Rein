@@ -63,6 +63,8 @@ pip install future tensorboard
 ```
 
 ## Dataset Preparation
+The Preparation is similar as [DDB](https://github.com/xiaoachen98/DDB).
+
 **Cityscapes:** Download `leftImg8bit_trainvaltest.zip` and `gt_trainvaltest.zip` from [Cityscapes Dataset](https://www.cityscapes-dataset.com/downloads/) and extract them to `data/cityscapes`.
 
 **Mapillary:** Download MAPILLARY v1.2 from [Mapillary Research](https://research.mapillary.com/) and extract it to `data/mapillary`.
