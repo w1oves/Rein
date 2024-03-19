@@ -38,10 +38,11 @@ def main(args):
     backbone = args.backbone
     rein_head = args.rein_head
 
-    if not osp.isfile(dinov2_segmentor_path):
-        weight = torch.load(rein_head, map_location='cpu')
-        weight['state_dict'].update({f'backbone.{k}': v for k, v in load_backbone(backbone).items()})
-        torch.save(weight, dinov2_segmentor_path)
+    weight = torch.load(rein_head, map_location='cpu')
+    if 'state_dict' not in weight:
+        weight=dict(state_dict=weight)
+    weight['state_dict'].update({f'backbone.{k}': v for k, v in load_backbone(backbone).items()})
+    torch.save(weight, dinov2_segmentor_path)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Load and process model weights.")
