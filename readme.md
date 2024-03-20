@@ -11,6 +11,7 @@ This project serves as the updated official implementation for the [paper](https
 ![Rein Framework](framework.png)
 
 ## 🔥 News!
+We have simplified the code for easier evaluation.
 
 🔥 Rein is accepted in CVPR 2024!
 
@@ -84,7 +85,7 @@ python tools/convert_datasets/mapillary_resize.py data/mapillary/validation/imag
 ```
 (Optional) **ACDC**: Download all image and label packages from [ACDC](https://acdc.vision.ee.ethz.ch/) and extract them to `data/acdc`.
 
-**Checkpoints:** Download pre-trained weights from [facebookresearch](https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth) for testing. Place them in the project directory without changing the file name. The final folder structure should look like this:
+The final folder structure should look like this:
 
 ```
 Rein
@@ -121,31 +122,27 @@ Rein
 │   │   ├── labels
 ├── ...
 ```
-
+## Pretraining Weights
+* **Download:** Download pre-trained weights from [facebookresearch](https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth) for testing. Place them in the project directory without changing the file name.
+* **Convert:** Convert pre-trained weights for training or evaluation.
+  ```bash
+  python tools/convert_models/convert_dinov2_large_512x512.py checkpoints/dinov2_vitl14_pretrain.pth checkpoints/dinov2_converted.pth
+  ```
+  (optional for 1024x1024 resolution)
+  ```bash
+  python tools/convert_models/convert_dinov2_large_1024x1024.py checkpoints/dinov2_vitl14_pretrain.pth checkpoints/dinov2_converted_1024x1024.pth
+  ```
 ## Evaluation
-* Generate full weights for testing in 512x512:
+  Run the evaluation:
   ```
-  python tools/generate_full_weights.py --dinov2_segmentor_path checkpoints/dinov2_segmentor.pth --backbone checkpoints/dinov2_vitl14_pretrain.pth --rein_head checkpoints/dinov2_rein_and_head.pth
+  python tools/test.py configs/dinov2/rein_dinov2_mask2former_512x512_bs1x4.py checkpoints/dinov2_rein_and_head.pth --backbone dinov2_converted.pth
   ```
-  Then, run the evaluation:
+  For most of provided release checkpoints, you can run this command to evluate
   ```
-  python tools/test.py configs/dinov2/rein_dinov2_mask2former_512x512_bs1x4.py checkpoints/dinov2_segmentor.pth
-  ```
-
-* Generate full weights for testing in 1024x1024:
-  ```
-  python tools/generate_full_weights_1024x1024.py --dinov2_segmentor_path checkpoints/dinov2_segmentor.pth --backbone checkpoints/dinov2_vitl14_pretrain.pth --rein_head /path/to/checkpoint
-  ```
-  Then, run the evaluation:
-  ```
-  python tools/test.py configs/dinov2/rein_dinov2_mask2former_1024x1024_bs4x2.py checkpoints/dinov2_segmentor.pth
+  python tools/test.py /path/to/cfg /path/to/checkpoint --backbone /path/to/dinov2_converted.pth #(or dinov2_converted_1024x1024.pth)
   ```
 
 ## Training
-Generate converted DINOv2 weights:
-```
-python tools/convert_models/convert_dinov2_large_512x512.py checkpoints/dinov2_vitl14_pretrain.pth
-```
 Start training in single GPU:
 ```
 python tools/train.py configs/dinov2/rein_dinov2_mask2former_512x512_bs1x4.py

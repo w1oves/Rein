@@ -178,12 +178,6 @@ class DinoVisionTransformer(BaseModule):
         self.head = nn.Identity()
 
         self.mask_token = nn.Parameter(torch.zeros(1, embed_dim))
-        # self.init_weights()
-
-    # def init_weights(self):
-    #     trunc_normal_(self.pos_embed, std=0.02)
-    #     nn.init.normal_(self.cls_token, std=1e-6)
-    #     named_apply(init_weights_vit_timm, self)
 
     def interpolate_pos_encoding(self, x, w, h):
         previous_dtype = x.dtype
