@@ -1,4 +1,4 @@
-from mmengine.registry import HOOKS
+from mmseg.registry import HOOKS
 from mmengine.hooks import Hook
 from mmengine.runner.checkpoint import _load_checkpoint
 
