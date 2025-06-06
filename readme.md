@@ -61,6 +61,9 @@ If you find our code or data helpful, please cite our paper:
 ```
 
 ## 🔥 News!
+* 🔥 We warmly congratulate **SoMA** (<https://ysj9909.github.io/SoRA.github.io/>) for receiving a **CVPR 2025 Highlight**! 
+Built upon the **Rein** codebase, SoMA demonstrates **outstanding semantic segmentation performance** and has even successfully accomplished **object detection tasks**!
+
 * 🔥 To facilitate users in integrating reins into their own projects, we provide a simplified version of reins: [simple_reins](https://github.com/w1oves/Rein/tree/train/simple_reins). With this version, users can easily use reins as a feature extractor. (Note: This version has removed features related to mask2former)
 
 * We have uploaded the config for `ResNet` and `ConvNeXt`.
