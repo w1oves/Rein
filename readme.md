@@ -22,6 +22,7 @@ Trained on Cityscapes, Rein generalizes to unseen driving scenes and cities: Nig
 [![fog]](https://user-images.githubusercontent.com/54713447/330731083-9ab5c758-b2b6-4eac-bb63-9a546f2f89fe.mp4)
 
 ## 🔥 News!
+* 🔥 Delighted to announce that ours work [HQCLIP: Leveraging Vision-Language Models to Create High-Quality Image-Text Datasets and CLIP Models](https://arxiv.org/abs/2507.22431) were accepted by ICCV 2025!
 * 🔥 We warmly congratulate **SoMA** (<https://ysj9909.github.io/SoRA.github.io/>) for receiving a **CVPR 2025 Highlight**! 
 Built upon the **Rein** codebase, SoMA demonstrates **outstanding semantic segmentation performance** and has even successfully accomplished **object detection tasks**!
 
@@ -29,11 +30,11 @@ Built upon the **Rein** codebase, SoMA demonstrates **outstanding semantic segme
 
 * We have uploaded the config for `ResNet` and `ConvNeXt`.
 
-* 🔥 We have uploaded the checkpoint and config for `+1/16 of Cityscapes` training set, and it get **82.5% on the Cityscapes** validation set!
+* We have uploaded the checkpoint and config for `+1/16 of Cityscapes` training set, and it get **82.5% on the Cityscapes** validation set!
 
 * Rein is accepted in `CVPR2024`!
 
-* 🔥 Using only the data from the Cityscapes training set, we achieved an average mIoU of **77.56% on the ACDC** test set! This result ranks **first** in the DGSS methods on the ACDC [benchmark](https://acdc.vision.ee.ethz.ch/submissions/65b6848187f1a5171cf44c34)! Checkpoint is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/Cityscapes).
+* Using only the data from the Cityscapes training set, we achieved an average mIoU of **77.56% on the ACDC** test set! This result ranks **first** in the DGSS methods on the ACDC [benchmark](https://acdc.vision.ee.ethz.ch/submissions/65b6848187f1a5171cf44c34)! Checkpoint is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/Cityscapes).
 
 * Using only synthetic data (UrbanSyn, GTAV, and Synthia), Rein achieved an mIoU of **78.4\% on Cityscapes**! Checkpoint is avaliable at [release](https://github.com/w1oves/Rein/releases/tag/UrbanSyn%2BGTAV%2BSynthia).
 
