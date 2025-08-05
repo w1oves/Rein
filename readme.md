@@ -22,6 +22,7 @@ Trained on Cityscapes, Rein generalizes to unseen driving scenes and cities: Nig
 [![fog]](https://user-images.githubusercontent.com/54713447/330731083-9ab5c758-b2b6-4eac-bb63-9a546f2f89fe.mp4)
 
 ## 🔥 News!
+* 🔥 Welcome to check out our latest work: [Rein++: Efficient Generalization and Adaptation for Semantic Segmentation with Vision Foundation Models](https://www.arxiv.org/abs/2508.01667)!
 * 🔥 Delighted to announce that ours work [HQCLIP: Leveraging Vision-Language Models to Create High-Quality Image-Text Datasets and CLIP Models](https://arxiv.org/abs/2507.22431) were accepted by ICCV 2025!
 * 🔥 We warmly congratulate **SoMA** (<https://ysj9909.github.io/SoRA.github.io/>) for receiving a **CVPR 2025 Highlight**! 
 Built upon the **Rein** codebase, SoMA demonstrates **outstanding semantic segmentation performance** and has even successfully accomplished **object detection tasks**!
