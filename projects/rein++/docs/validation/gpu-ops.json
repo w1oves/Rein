@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "capability": [
+    9,
+    0
+  ],
+  "torch_version": "2.1.0+cu118",
+  "cuda": "11.8",
+  "max_abs_error": 1.1920928955078125e-07
+}

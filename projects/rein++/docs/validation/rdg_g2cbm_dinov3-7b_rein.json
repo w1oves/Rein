@@ -1,0 +1,41 @@
+{
+  "model_id": "rdg_g2cbm_dinov3-7b_rein",
+  "status": "passed",
+  "torch_version": "2.1.0+cu118",
+  "precision": "float32",
+  "tf32": false,
+  "seed": 42,
+  "source_image_sha256": "b7dc7621f8ce9cf276959d47cfe470d9fc4b2672e504b794cff024b039e2f68e",
+  "original_config_sha256": "2b246495afea1b790bbabbab3ad602cf2288de9a71d29ca5bd3fcc47e3e07e3b",
+  "checkpoint_sha256": "8e7513e0609f7c66bc2f47e296e3ff5f9c7829b2e8b4fa06c3eca81f04eec72d",
+  "config_sha256": "1a644fb97240c99abd608121d5b864efe4d46c9ca4b70770379db524e2758caf",
+  "comparisons": [
+    {
+      "shape": [
+        1,
+        19,
+        512,
+        768
+      ],
+      "finite": true,
+      "max_abs_error": 0.0,
+      "logits_close": true,
+      "labels_identical": true
+    },
+    {
+      "shape": [
+        1,
+        19,
+        528,
+        736
+      ],
+      "finite": true,
+      "max_abs_error": 0.0,
+      "logits_close": true,
+      "labels_identical": true
+    }
+  ],
+  "original_source_sha256": "ce1a8735aff31cc5428b1741a58352afbb68508e5cb0e4ab9ffc868984b5fab6",
+  "release_source_sha256": "59eb53e8fb14e59ef79482a97f96176eba6c31be4deeddf9cb23270067ae108c",
+  "validation_harness_sha256": "bf17b0e4dd2bb3db7a5922d26087876a1339aa9eecb72deebc9e189ffb229dc8"
+}

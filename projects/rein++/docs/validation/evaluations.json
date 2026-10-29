@@ -1,0 +1,140 @@
+[
+  {
+    "model_id": "rdg_usg2cbm_dinov3_rein",
+    "status": "passed",
+    "metrics": {
+      "aAcc": 93.6,
+      "mIoU": 74.64,
+      "mAcc": 85.92,
+      "citys_aAcc": 95.56,
+      "citys_mIoU": 78.91,
+      "citys_mAcc": 87.89,
+      "bdd_aAcc": 92.29,
+      "bdd_mIoU": 63.44,
+      "bdd_mAcc": 76.47,
+      "map_aAcc": 93.55,
+      "map_mIoU": 74.78,
+      "map_mAcc": 86.22,
+      "mean_aAcc": 93.80000000000001,
+      "mean_mIoU": 72.37666666666667,
+      "mean_mAcc": 83.52666666666667
+    }
+  },
+  {
+    "model_id": "rdg_usg2cbm_dinov3-7b_rein",
+    "status": "passed",
+    "metrics": {
+      "aAcc": 93.86,
+      "mIoU": 75.95,
+      "mAcc": 86.09,
+      "citys_aAcc": 95.93,
+      "citys_mIoU": 80.02,
+      "citys_mAcc": 88.97,
+      "bdd_aAcc": 92.46,
+      "bdd_mIoU": 66.32,
+      "bdd_mAcc": 77.4,
+      "map_aAcc": 93.81,
+      "map_mIoU": 75.91,
+      "map_mAcc": 86.19,
+      "mean_aAcc": 94.06666666666666,
+      "mean_mIoU": 74.08333333333333,
+      "mean_mAcc": 84.18666666666667
+    }
+  },
+  {
+    "model_id": "rdg_c2abm_dinov3_rein",
+    "status": "passed",
+    "metrics": {
+      "aAcc": 93.14,
+      "mIoU": 74.39,
+      "mAcc": 83.92,
+      "citys_aAcc": 96.92,
+      "citys_mIoU": 84.15,
+      "citys_mAcc": 91.23,
+      "bdd_aAcc": 93.96,
+      "bdd_mIoU": 65.04,
+      "bdd_mAcc": 78.83,
+      "map_aAcc": 94.77,
+      "map_mIoU": 77.41,
+      "map_mAcc": 87.45,
+      "acdc_night_aAcc": 86.35,
+      "acdc_night_mIoU": 55.84,
+      "acdc_night_mAcc": 72.32,
+      "acdc_snow_aAcc": 95.04,
+      "acdc_snow_mIoU": 76.35,
+      "acdc_snow_mAcc": 83.76,
+      "acdc_fog_aAcc": 96.32,
+      "acdc_fog_mIoU": 82.5,
+      "acdc_fog_mAcc": 90.95,
+      "acdc_rain_aAcc": 95.05,
+      "acdc_rain_mIoU": 75.4,
+      "acdc_rain_mAcc": 87.17,
+      "mean_aAcc": 93.19,
+      "mean_mIoU": 72.52250000000001,
+      "mean_mAcc": 83.55
+    }
+  },
+  {
+    "model_id": "rdg_c2abm_dinov3-7b_rein",
+    "status": "passed",
+    "metrics": {
+      "aAcc": 94.36,
+      "mIoU": 77.67,
+      "mAcc": 86.69,
+      "citys_aAcc": 97.05,
+      "citys_mIoU": 85.36,
+      "citys_mAcc": 92.22,
+      "bdd_aAcc": 94.41,
+      "bdd_mIoU": 67.97,
+      "bdd_mAcc": 80.78,
+      "map_aAcc": 94.75,
+      "map_mIoU": 77.54,
+      "map_mAcc": 87.42,
+      "acdc_night_aAcc": 90.5,
+      "acdc_night_mIoU": 62.9,
+      "acdc_night_mAcc": 81.84,
+      "acdc_snow_aAcc": 95.35,
+      "acdc_snow_mIoU": 78.35,
+      "acdc_snow_mAcc": 85.83,
+      "acdc_fog_aAcc": 96.41,
+      "acdc_fog_mIoU": 84.72,
+      "acdc_fog_mAcc": 91.49,
+      "acdc_rain_aAcc": 95.3,
+      "acdc_rain_mIoU": 77.72,
+      "acdc_rain_mAcc": 88.02,
+      "mean_aAcc": 94.39,
+      "mean_mIoU": 75.9225,
+      "mean_mAcc": 86.795
+    }
+  },
+  {
+    "model_id": "rdg_g2cbm_dinov3-7b_rein",
+    "status": "passed",
+    "metrics": {
+      "aAcc": 93.17,
+      "mIoU": 72.59,
+      "mAcc": 82.6,
+      "citys_aAcc": 93.17,
+      "citys_mIoU": 73.89,
+      "citys_mAcc": 83.98,
+      "bdd_aAcc": 92.26,
+      "bdd_mIoU": 65.49,
+      "bdd_mAcc": 76.49,
+      "map_aAcc": 93.21,
+      "map_mIoU": 72.58,
+      "map_mAcc": 82.58,
+      "mean_aAcc": 92.88,
+      "mean_mIoU": 70.65333333333332,
+      "mean_mAcc": 81.01666666666667
+    }
+  },
+  {
+    "model_id": "rda_g2c_dinov3_rein_ta",
+    "status": "passed",
+    "metrics": {
+      "aAcc": 95.58,
+      "mIoU": 79.03,
+      "mAcc": 86.85
+    }
+  }
+]

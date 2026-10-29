@@ -1,0 +1,12 @@
+# First install torch==2.1.0 torchvision==0.16.0 from the official cu118 index.
+mmengine==0.10.7
+mmsegmentation==1.2.2
+mmdet==3.3.0
+timm==0.9.16
+numpy==1.26.4
+Pillow==10.4.0
+scipy==1.13.1
+einops==0.8.0
+ftfy==6.3.1
+regex==2024.11.6
+cityscapesscripts==2.3.0

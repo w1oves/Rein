@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "model_id": "rdg_usg2cbm_dinov3_rein",
+  "input_sha256": "b7dc7621f8ce9cf276959d47cfe470d9fc4b2672e504b794cff024b039e2f68e",
+  "outputs": {
+    "lindau_000046_000019_leftImg8bit_trainIds.png": "3092df04f0adec17aeeb775f070a1d6d0257d4bccd3d6717b509707240e3d1b1",
+    "lindau_000046_000019_leftImg8bit_overlay.png": "6f5e8e65abdfb55ce0f1eb719347f08b916080f7cf1c61c28e49cca416281a35"
+  },
+  "missing_dataset_error": "passed"
+}

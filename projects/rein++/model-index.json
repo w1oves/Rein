@@ -1,0 +1,243 @@
+{
+  "release_status": "gpu_validated",
+  "models": [
+    {
+      "format_version": 1,
+      "model_id": "rdg_usg2cbm_dinov3_rein",
+      "branch": "student",
+      "backbone_sha256": "8aa4cbddda325040fc78db2c272754af6ebe8ff2c55f6ec4f1964d8890f66035",
+      "config_sha256": "2812c40e62a5692fbff8ef50568a24cacf444f158643a26bbfbf307630388d60",
+      "file": "rdg_usg2cbm_dinov3_rein/model.pth",
+      "sha256": "25157298fc60457e79e84901dfd7607aabb160916ffc41852c987e2e20820585",
+      "bytes": 94362423,
+      "tensor_count": 303,
+      "base_file": "dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+      "source_checkpoint_sha256": "b5cd98fe0e1b4afaed7e4c752a36dcab582b57caa42a19e9c617b9f805904cd3",
+      "validation": {
+        "tensor_integrity": "passed",
+        "gpu_equivalence": "passed",
+        "dataset_evaluation": "passed"
+      },
+      "config": "configs/rdg_usg2cbm_dinov3_rein.py",
+      "method": "Rein-G",
+      "backbone": "DINOv3-L",
+      "setting": "usg2cbm",
+      "paper_table": "II",
+      "paper_miou": {
+        "Cityscapes validation": 78.9,
+        "BDD100K validation": 63.4,
+        "Mapillary validation": 74.8
+      },
+      "historical_miou": {
+        "Cityscapes validation": 78.91,
+        "BDD100K validation": 63.43,
+        "Mapillary validation": 74.78
+      },
+      "historical_run": "20260110_073437",
+      "checkpoint_iteration": 40000,
+      "retested_miou": {
+        "Cityscapes validation": 78.91,
+        "BDD100K validation": 63.44,
+        "Mapillary validation": 74.78
+      }
+    },
+    {
+      "format_version": 1,
+      "model_id": "rdg_usg2cbm_dinov3-7b_rein",
+      "branch": "student",
+      "backbone_sha256": "a955f4ea3bec4fcd666bf363630da4386383069b482c8a927e17a3e1154965b7",
+      "config_sha256": "1a644fb97240c99abd608121d5b864efe4d46c9ca4b70770379db524e2758caf",
+      "file": "rdg_usg2cbm_dinov3-7b_rein/model.pth",
+      "sha256": "8b9b1647372c9ac447f3f33fa96145c7ee97b2c7a79d72956002f1742dd90450",
+      "bytes": 244960055,
+      "tensor_count": 303,
+      "base_file": "dinov3_vit7b16_pretrain_lvd1689m-a955f4ea.pth",
+      "source_checkpoint_sha256": "d57b4d4e12912f0e77a4168ae748e5de0476e3f9877f66cdc124581014c34082",
+      "validation": {
+        "tensor_integrity": "passed",
+        "gpu_equivalence": "passed",
+        "dataset_evaluation": "passed"
+      },
+      "config": "configs/rdg_usg2cbm_dinov3-7b_rein.py",
+      "method": "Rein-G",
+      "backbone": "DINOv3-7B",
+      "setting": "usg2cbm",
+      "paper_table": "II",
+      "paper_miou": {
+        "Cityscapes validation": 80.0,
+        "BDD100K validation": 66.3,
+        "Mapillary validation": 75.9
+      },
+      "historical_miou": {
+        "Cityscapes validation": 80.02,
+        "BDD100K validation": 66.32,
+        "Mapillary validation": 75.91
+      },
+      "historical_run": "20260114_161038",
+      "checkpoint_iteration": 40000,
+      "retested_miou": {
+        "Cityscapes validation": 80.02,
+        "BDD100K validation": 66.32,
+        "Mapillary validation": 75.91
+      }
+    },
+    {
+      "format_version": 1,
+      "model_id": "rdg_c2abm_dinov3_rein",
+      "branch": "student",
+      "backbone_sha256": "8aa4cbddda325040fc78db2c272754af6ebe8ff2c55f6ec4f1964d8890f66035",
+      "config_sha256": "cb98e4950d7031513226827a995bb0600cafd9081aa226c7ee879e21b641e199",
+      "file": "rdg_c2abm_dinov3_rein/model.pth",
+      "sha256": "f7f41673126cbc2fc8b7b08b49639d9b143a24ea985aea7626cd3c5608394d4f",
+      "bytes": 94362423,
+      "tensor_count": 303,
+      "base_file": "dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+      "source_checkpoint_sha256": "43cec1223807d3b5b9658c461b232db77b9866dbe7d8344d90595e0b888ff6f3",
+      "validation": {
+        "tensor_integrity": "passed",
+        "gpu_equivalence": "passed",
+        "dataset_evaluation": "passed"
+      },
+      "config": "configs/rdg_c2abm_dinov3_rein.py",
+      "method": "Rein-G",
+      "backbone": "DINOv3-L",
+      "setting": "c2abm",
+      "paper_table": "II",
+      "paper_miou": {
+        "ACDC validation (mean of four conditions)": 72.5,
+        "BDD100K validation": 65.0,
+        "Mapillary validation": 77.4
+      },
+      "historical_miou": {
+        "ACDC validation (mean of four conditions)": 72.52250000000001,
+        "BDD100K validation": 65.04,
+        "Mapillary validation": 77.42
+      },
+      "historical_run": "20260102_023105",
+      "checkpoint_iteration": 40000,
+      "retested_miou": {
+        "ACDC validation (mean of four conditions)": 72.52250000000001,
+        "BDD100K validation": 65.04,
+        "Mapillary validation": 77.41
+      }
+    },
+    {
+      "format_version": 1,
+      "model_id": "rdg_c2abm_dinov3-7b_rein",
+      "branch": "student",
+      "backbone_sha256": "a955f4ea3bec4fcd666bf363630da4386383069b482c8a927e17a3e1154965b7",
+      "config_sha256": "64738adadeb7305fabaaf545a15570b1acb72a145701a317c70c067cf86d7dd4",
+      "file": "rdg_c2abm_dinov3-7b_rein/model.pth",
+      "sha256": "1ea11be3311a8b145040c11fcda2f308dec1e9203172bbd72dbef0b649e678a6",
+      "bytes": 244960055,
+      "tensor_count": 303,
+      "base_file": "dinov3_vit7b16_pretrain_lvd1689m-a955f4ea.pth",
+      "source_checkpoint_sha256": "70c0c2b35ca960b9a66f142d714beb0578d0a08eddbdba528710359705306782",
+      "validation": {
+        "tensor_integrity": "passed",
+        "gpu_equivalence": "passed",
+        "dataset_evaluation": "passed"
+      },
+      "config": "configs/rdg_c2abm_dinov3-7b_rein.py",
+      "method": "Rein-G",
+      "backbone": "DINOv3-7B",
+      "setting": "c2abm",
+      "paper_table": "II",
+      "paper_miou": {
+        "ACDC validation (mean of four conditions)": 75.9,
+        "BDD100K validation": 68.0,
+        "Mapillary validation": 77.5
+      },
+      "historical_miou": {
+        "ACDC validation (mean of four conditions)": 75.9225,
+        "BDD100K validation": 67.98,
+        "Mapillary validation": 77.54
+      },
+      "historical_run": "20260105_160846",
+      "checkpoint_iteration": 40000,
+      "retested_miou": {
+        "ACDC validation (mean of four conditions)": 75.9225,
+        "BDD100K validation": 67.97,
+        "Mapillary validation": 77.54
+      }
+    },
+    {
+      "format_version": 1,
+      "model_id": "rdg_g2cbm_dinov3-7b_rein",
+      "branch": "student",
+      "backbone_sha256": "a955f4ea3bec4fcd666bf363630da4386383069b482c8a927e17a3e1154965b7",
+      "config_sha256": "1a644fb97240c99abd608121d5b864efe4d46c9ca4b70770379db524e2758caf",
+      "file": "rdg_g2cbm_dinov3-7b_rein/model.pth",
+      "sha256": "8e7513e0609f7c66bc2f47e296e3ff5f9c7829b2e8b4fa06c3eca81f04eec72d",
+      "bytes": 244960055,
+      "tensor_count": 303,
+      "base_file": "dinov3_vit7b16_pretrain_lvd1689m-a955f4ea.pth",
+      "source_checkpoint_sha256": "11f224ecd6de2b37d08944e19dbdf271659f6cf157b8c139c1ef99ccced55232",
+      "validation": {
+        "tensor_integrity": "passed",
+        "gpu_equivalence": "passed",
+        "dataset_evaluation": "passed"
+      },
+      "config": "configs/rdg_g2cbm_dinov3-7b_rein.py",
+      "method": "Rein-G",
+      "backbone": "DINOv3-7B",
+      "setting": "g2cbm",
+      "paper_table": "II",
+      "paper_miou": {
+        "Cityscapes validation": 73.9,
+        "BDD100K validation": 65.5,
+        "Mapillary validation": 72.6
+      },
+      "historical_miou": {
+        "Cityscapes validation": 73.9,
+        "BDD100K validation": 65.49,
+        "Mapillary validation": 72.58
+      },
+      "historical_run": "20251228_171750",
+      "checkpoint_iteration": 40000,
+      "retested_miou": {
+        "Cityscapes validation": 73.89,
+        "BDD100K validation": 65.49,
+        "Mapillary validation": 72.58
+      }
+    },
+    {
+      "format_version": 1,
+      "model_id": "rda_g2c_dinov3_rein_ta",
+      "branch": "student",
+      "backbone_sha256": "8aa4cbddda325040fc78db2c272754af6ebe8ff2c55f6ec4f1964d8890f66035",
+      "config_sha256": "f71f12d5a4d509efa8854b025667730118552aed1ac0640104488cb62904ad5d",
+      "file": "rda_g2c_dinov3_rein_ta/model.pth",
+      "sha256": "a600f5c94d382b4a4683f3c41884080b4eb81f7415dab43bfb08ee5136617af9",
+      "bytes": 94362423,
+      "tensor_count": 303,
+      "base_file": "dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+      "source_checkpoint_sha256": "66aec73c9148cc716ca98ea931a1aecea755abb71aeef923cce96d8b23f99f19",
+      "validation": {
+        "tensor_integrity": "passed",
+        "gpu_equivalence": "passed",
+        "dataset_evaluation": "passed"
+      },
+      "config": "configs/rda_g2c_dinov3_rein_ta.py",
+      "method": "Rein-A",
+      "backbone": "DINOv3-L",
+      "setting": "g2c",
+      "paper_table": "VII",
+      "paper_miou": {
+        "Cityscapes validation": 79.0
+      },
+      "historical_miou": {
+        "Cityscapes validation": 79.03
+      },
+      "historical_run": "20260105_160559",
+      "checkpoint_iteration": 31000,
+      "retested_miou": {
+        "Cityscapes validation": 79.03
+      }
+    }
+  ],
+  "release_date": "2026-10-29",
+  "huggingface_repository": "zhixiangwei/ReinPlusPlus",
+  "huggingface_revision": "f1547b68b1283add02425c2732eeb4dade42012d",
+  "weights_public": true
+}

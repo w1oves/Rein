@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reinpp"
+version = "0.1.0"
+description = "Rein++ inference and semantic segmentation evaluation"
+requires-python = ">=3.10"
+license = {file = "LICENSE.txt"}
+# CUDA/PyTorch/MMCV must be installed as a compatible set; see requirements.txt.
+dependencies = ["mmengine==0.10.7", "mmsegmentation==1.2.2", "mmdet==3.3.0", "timm==0.9.16", "numpy<2", "Pillow>=10", "ftfy", "regex", "scipy", "einops", "cityscapesscripts==2.3.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+license-files = ["LICENSE.txt", "licenses/*.txt"]
+
+[tool.setuptools.packages.find]
+include = ["reinpp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

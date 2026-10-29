@@ -1,3 +1,5 @@
+> **Rein++ (TPAMI 2026):** [Inference and evaluation code](projects/rein++/readme.md) · [First-batch checkpoints](https://huggingface.co/zhixiangwei/ReinPlusPlus) · [Re-evaluation results](projects/rein++/docs/models.md). The remaining checkpoints and training code will be released progressively.
+
 # [CVPR 2024] Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation
 [zhixiang wei](https://zxwei.site)<sup>1</sup>, [lin chen](https://lin-chen.site)<sup>2</sup>, et al. <br />
 <sup>1</sup> University of Science of Techonology of China    <sup>2</sup> Shanghai AI Laboratory

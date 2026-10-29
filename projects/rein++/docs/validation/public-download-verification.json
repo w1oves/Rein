@@ -1,0 +1,206 @@
+{
+  "repo": "zhixiangwei/ReinPlusPlus",
+  "commit": "f1547b68b1283add02425c2732eeb4dade42012d",
+  "status": "passed",
+  "files_verified": 33,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 6834,
+      "sha256": "23369372bebc41b2c7e5da627e40809ab31b91acdee004548bb4b34007678e46",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "LICENSE.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "VALIDATION.md",
+      "bytes": 2725,
+      "sha256": "1a1837775ad5c21f52879d6bc88063d2978b6c63ba8cc692a7f82e5566da2022",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rda_g2c_dinov3_rein_ta/config.py",
+      "bytes": 6137,
+      "sha256": "f71f12d5a4d509efa8854b025667730118552aed1ac0640104488cb62904ad5d",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rda_g2c_dinov3_rein_ta/manifest.json",
+      "bytes": 847,
+      "sha256": "2bc7e324f06cb591a6ddb7c950f06c179726a37d089e38adce039fb1c84c0524",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "model-index.json",
+      "bytes": 9271,
+      "sha256": "f95cbd58a85a8d6b9c87e1d2a609246b33548db1afb2696f1561423c99f85e4e",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_c2abm_dinov3-7b_rein/manifest.json",
+      "bytes": 945,
+      "sha256": "36aca6923c135b3d897325863903f472639ecc2d0db8c0ad8c0ddb62397d615c",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_c2abm_dinov3-7b_rein/config.py",
+      "bytes": 10606,
+      "sha256": "64738adadeb7305fabaaf545a15570b1acb72a145701a317c70c067cf86d7dd4",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_c2abm_dinov3_rein/config.py",
+      "bytes": 10601,
+      "sha256": "cb98e4950d7031513226827a995bb0600cafd9081aa226c7ee879e21b641e199",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_c2abm_dinov3_rein/manifest.json",
+      "bytes": 944,
+      "sha256": "b1de7b20444b13ccd00ccb7d44a7b8c5cff2eb16667261e77d49bf3d8c6d3872",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rda_g2c_dinov3_rein_ta/model.pth",
+      "bytes": 94362423,
+      "sha256": "a600f5c94d382b4a4683f3c41884080b4eb81f7415dab43bfb08ee5136617af9",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_g2cbm_dinov3-7b_rein/config.py",
+      "bytes": 7813,
+      "sha256": "1a644fb97240c99abd608121d5b864efe4d46c9ca4b70770379db524e2758caf",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_g2cbm_dinov3-7b_rein/manifest.json",
+      "bytes": 923,
+      "sha256": "1fed179f52527ab221ef2c06b1a4e08940cea84bdf73a42e7ac2b65249d89fe0",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_c2abm_dinov3_rein/model.pth",
+      "bytes": 94362423,
+      "sha256": "f7f41673126cbc2fc8b7b08b49639d9b143a24ea985aea7626cd3c5608394d4f",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_usg2cbm_dinov3-7b_rein/config.py",
+      "bytes": 7813,
+      "sha256": "1a644fb97240c99abd608121d5b864efe4d46c9ca4b70770379db524e2758caf",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_usg2cbm_dinov3-7b_rein/manifest.json",
+      "bytes": 929,
+      "sha256": "bdf7e26c46494fc6f0fd9a12183ae5d37acf11b3783bb62f5a19b59f8f699175",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_c2abm_dinov3-7b_rein/model.pth",
+      "bytes": 244960055,
+      "sha256": "1ea11be3311a8b145040c11fcda2f308dec1e9203172bbd72dbef0b649e678a6",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_usg2cbm_dinov3_rein/config.py",
+      "bytes": 7808,
+      "sha256": "2812c40e62a5692fbff8ef50568a24cacf444f158643a26bbfbf307630388d60",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_usg2cbm_dinov3_rein/manifest.json",
+      "bytes": 918,
+      "sha256": "f1a2b51cee8a189c8cb2433268ec7fc0672d520a3e71ab8f8fc43dae0c7a68b2",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_g2cbm_dinov3-7b_rein/model.pth",
+      "bytes": 244960055,
+      "sha256": "8e7513e0609f7c66bc2f47e296e3ff5f9c7829b2e8b4fa06c3eca81f04eec72d",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/cli-smoke.json",
+      "bytes": 449,
+      "sha256": "d316961eb7fc1a860da370c82b683a740eef27d657d16c829b5d23054f160fa9",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_usg2cbm_dinov3_rein/model.pth",
+      "bytes": 94362423,
+      "sha256": "25157298fc60457e79e84901dfd7607aabb160916ffc41852c987e2e20820585",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/evaluations.json",
+      "bytes": 3363,
+      "sha256": "ca62f40b913cb7e2a9cee5639ff83ef5bcd40a02000cb96efeeac5de4d90e671",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/gpu-ops.json",
+      "bytes": 179,
+      "sha256": "15586220663d7d4e9d56d7cb1f478f8430aad605811673d8fc29f37f3b805c0e",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/rda_g2c_dinov3_rein_ta.json",
+      "bytes": 1254,
+      "sha256": "74fbf88d212b9778c428372879346923070ca9ebde5814ad7a81f6db4af21943",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/rdg_c2abm_dinov3-7b_rein.json",
+      "bytes": 1256,
+      "sha256": "06d6a527ea0ca7747fe678687602f2593d2890e01091f0ccde52e7f3cc296e6a",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/rdg_c2abm_dinov3_rein.json",
+      "bytes": 1253,
+      "sha256": "0d603e871a5341fb1dbb92d197f08f0051642f7d872cfe0b0b4bf1ab3f27ee59",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/rdg_g2cbm_dinov3-7b_rein.json",
+      "bytes": 1256,
+      "sha256": "f9aaff40a2b85e71192438abc70f7dcb294077b712308ec05f26259e95071261",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/rdg_usg2cbm_dinov3-7b_rein.json",
+      "bytes": 1258,
+      "sha256": "c95bd85e868dffeac50783986e40d86f94f06ea44afa4af299487cee5b0b6613",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/rdg_usg2cbm_dinov3_rein.json",
+      "bytes": 1255,
+      "sha256": "693075ab1db627a3b0e5a68c9644d896b027698f17d448cb83b7fde834c5aea9",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "validation/release-gate.json",
+      "bytes": 69,
+      "sha256": "9a83bb22ab75757a4c1d9ad157aeba77732a7396ef2f25225f9081b33e733534",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "SHA256SUMS",
+      "bytes": 3156,
+      "sha256": "79c39df776fbf41d15714b85493088955ae77d15ef464476b34789c986ded45b",
+      "anonymous_download": "passed"
+    },
+    {
+      "file": "rdg_usg2cbm_dinov3-7b_rein/model.pth",
+      "bytes": 244960055,
+      "sha256": "8b9b1647372c9ac447f3f33fa96145c7ee97b2c7a79d72956002f1742dd90450",
+      "anonymous_download": "passed"
+    }
+  ]
+}
